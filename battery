@@ -1,0 +1,6 @@
+#!/bin/bash
+
+path=/sys/class/power_supply/BAT0
+cap=$(cat $path/capacity)
+icon=""
+printf " $icon $cap%%"

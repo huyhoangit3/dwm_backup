@@ -1,0 +1,3 @@
+#!/bin/bash
+intensity=$(xbacklight | awk '{printf "%d",$1}')
+printf "  $intensity%%"

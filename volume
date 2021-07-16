@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This script needs pavucontrol and changeVolume script to work
+volstat="$(amixer sget Master)"
+echo "$volstat" | grep "\[off\]" >/dev/null && printf "婢\\n" && exit
+vol=$(echo "$volstat" | grep -o "\[[0-9]\+%\]" | sed "s/[^0-9]*//g;1q")
+icon="墳"
+printf "$icon $vol%%"
