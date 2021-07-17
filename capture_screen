@@ -1,6 +1,0 @@
-if [ "$1" = "full" ]
-then
-	scrot '%d-%m-%Y_$wx$h.png' -e 'mv $f ~/Pictures/captures'
-else
-	scrot -s '%d-%m-%Y_$wx$h.png' -e 'mv $f ~/Pictures/captures'
-fi

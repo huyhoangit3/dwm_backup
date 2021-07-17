@@ -41,7 +41,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", ""};
+static const char *tags[] = { "", "", "", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -53,8 +53,7 @@ static const Rule rules[] = {
 	{ "firefox",  				NULL,       NULL,       1 << 2,       1,           			0,           -1},
 	{ "Subl",   				NULL,     	NULL,       1 << 3,    	  1,             		0,           -1},
 	{ "jetbrains-idea", 		NULL,     	NULL,       1 << 4,    	  1,             		0,           -1},
-	//{ "discord", 				NULL,     	NULL,       1 << 5,    	  1,             		0,           -1},
-	//{ "jetbrains-datagrip", 	NULL,     	NULL,       1 << 6,       1,             		0,           -1},
+	{ "jetbrains-datagrip", 	NULL,     	NULL,       1 << 5,       1,             		0,           -1},
 };
 
 /* layout(s) */

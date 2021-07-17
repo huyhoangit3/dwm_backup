@@ -1,2 +1,0 @@
-#!/bin/bash
-date "+   %a, %d %b $icon%I:%M%p "
