@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ "$1" = "yt" ]
+then
+	firefox https://www.youtube.com/ > /dev/null 2>&1 &
+elif [ "$1" = "repo" ]
+then
+	firefox https://aur.archlinux.org > /dev/null 2>&1 &
+elif [ "$1" = "sv" ]
+then
+	firefox https://sv.dhcnhn.vn > /dev/null 2>&1 &
+elif [ "$1" = "fb" ]
+then
+	firefox https://www.facebook.com > /dev/null 2>&1 &
+else
+	firefox > /dev/null 2>&1 &
+fi
