@@ -22,11 +22,11 @@ static const char *fonts[]          = 	{
 						"JetbrainsMono Nerd Font:size=10:antialias=true:autohint=true"
 					};
 static const char dmenufont[]       = "Noto Sans Medium:size=10";
-static const char col_gray1[]       = "#bd4242"; // trai
-static const char col_gray2[]       = "#2a5296"; // phai
+static const char col_gray1[]       = "#98c379"; // trai
+static const char col_gray2[]       = "#61afef"; // phai
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#4db027"; //giua
+static const char col_gray4[]       = "#282c34";
+static const char col_cyan[]        = "#e5c07b"; //giua
 static const char col_selbor[]      = "#3ecc06";
 static const char col_normbor[]     = "#fcd303";
 static const char *colors[][3]      = {
@@ -41,18 +41,18 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", ""};
+static const char *tags[] = { "1 ", "2 ", "3 ", "4 ", "5 ", "6 "};
 
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class libreoffice-writer
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      				instance    title       tags mask     switchtotag 			isfloating   monitor */
-	{ "st-256color",    		NULL,     	NULL,       1 << 1,    	  1,             		0,           -1},
-	{ "firefox",  				NULL,       NULL,       1 << 2,       1,           			0,           -1},
-	{ "Subl",   				NULL,     	NULL,       1 << 3,    	  1,             		0,           -1},
-	{ "jetbrains-idea", 		NULL,     	NULL,       1 << 4,    	  1,             		0,           -1},
+	/* class      						instance    title       tags mask     switchtotag 			isfloating   monitor */
+	{ "st-256color",    			NULL,     	NULL,       1 << 1,    	  1,             		0,           -1},
+	{ "firefox",  						NULL,       NULL,       1 << 2,       1,           			0,           -1},
+	{ "Subl",   							NULL,     	NULL,       1 << 3,    	  1,             		0,           -1},
+	{ "jetbrains-idea", 			NULL,     	NULL,       1 << 4,    	  1,             		0,           -1},
 	{ "jetbrains-datagrip", 	NULL,     	NULL,       1 << 5,       1,             		0,           -1},
 };
 
